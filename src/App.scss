@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-block: 2rem;
+  a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+}
+
+.challenge01 p {
+  font-size: 1.2rem;
+}
+
+.spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid #fff;
+  border-bottom-color: #222;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  animation: spin .7s ease-in-out infinite;
+}
+
+button {
+  margin-bottom: 2rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.chartHolder {
+  margin: 0 auto;
+  max-width: 30rem;
+}
